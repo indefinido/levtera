@@ -32,19 +32,19 @@ Features
 Domain Rules for
 
  - Makes
-   -- Provider validation
+   - Provider validation
  - Version
-   -- Provider ivalidation
-   -- Power, doors and valves numericality check
-   -- Transmission type check (automatic, semi-automatic ...)
-   -- Body type check (truck, convertible, ...)
+   - Provider ivalidation
+   - Power, doors and valves numericality check
+   - Transmission type check (automatic, semi-automatic ...)
+   - Body type check (truck, convertible, ...)
  - Models
-   -- Provider ivalidation
-   -- Vehicle type check (car, motorcycle, ...)
+   - Provider ivalidation
+   - Vehicle type check (car, motorcycle, ...)
  - Vehicles
-   -- Provider ivalidation
-   -- Fabrication and model years numericality
-   -- Engine feeding check (alcohol, flexible, gasoline, ...)
+   - Provider ivalidation
+   - Fabrication and model years numericality
+   - Engine feeding check (alcohol, flexible, gasoline, ...)
 
 
 Examples
