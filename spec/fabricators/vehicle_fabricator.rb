@@ -4,7 +4,7 @@ Fabricator :levtera_vehicle do
 
   plate do
     plate  = Forgery::Basic.text allow_lower: false, exactly: 3, allow_numeric: false
-    plate += sprintf "%04d", Forgery::Basic.number at_most: 9999
+    plate += sprintf "%04d", Forgery::Basic.number(at_most: 9999)
   end
 
   engine_feeding  { ENGINE_FEEDINGS_NAMES.sample }

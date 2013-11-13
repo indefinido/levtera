@@ -20,6 +20,11 @@ Gem::Specification.new do |gem|
   gem.add_dependency "rails", ">= 3"
   gem.add_dependency "mongoid"
 
+  # When using levtera/rspec
+  gem.add_dependency 'shoulda-matchers'
+  gem.add_dependency 'mongoid-rspec'
+
+
   gem.add_development_dependency 'rdoc', '~> 3.0'
   gem.add_development_dependency 'rspec', '~> 2.4'
   gem.add_development_dependency 'rubygems-tasks', '~> 0.2'
@@ -36,6 +41,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'pry-stack_explorer'
   gem.add_development_dependency 'pry-rails'
   gem.add_development_dependency 'guard-rspec'
-  gem.add_development_dependency 'mongoid-rspec'
   gem.add_development_dependency 'sqlite3'
 end

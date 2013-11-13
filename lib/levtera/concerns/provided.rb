@@ -6,7 +6,7 @@ module Levtera::Concerns
       field :provider_id , type: String
       field :provider    , type: Symbol
 
-      validates :provider_id, uniqueness: true
+      validates :provider_id, uniqueness: {allow_nil: true}
     end
   end
 end

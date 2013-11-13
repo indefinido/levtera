@@ -51,18 +51,19 @@ Examples
 --------
 
 ```ruby
-  require 'levtera'
 
-  class Version
-    include Mongoid::Document
-    include Levtera::Concerns::Version
-  end
+require 'levtera'
 
-  version.transmission_type = :automatic
-  version.valid? // true
+class Version
+  include Mongoid::Document
+  include Levtera::Concerns::Version
+end
 
-  version.transmission_type = :potatoe
-  version.valid? // false
+version.transmission_type = :automatic
+version.valid? // true
+
+version.transmission_type = :potatoe
+version.valid? // false
 
 ```
 
@@ -83,6 +84,21 @@ Through gem command
 
 Or add to your gemfile
 
+Testing
+=======
+
+On your spec_helper.rb, require integration to use shared examples
+
+```ruby
+
+  require 'levtera/rspec'
+
+  describe Make do
+    it_should_behave_like :levtera_make
+  end
+
+
+```
 
 
 This project rocks and uses WTFP-LICENSE.

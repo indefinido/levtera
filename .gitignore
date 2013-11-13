@@ -22,7 +22,7 @@ tmp/**/*
 public/uploads/*
 public/clicktale/*
 public/uploads/*
-spec/dummy/log/*
+spec/dummy/log/**/*
 spec/dummy/tmp/**/*
 spec/dummy/public/uploads/*
 spec/dummy/public/clicktale/*
