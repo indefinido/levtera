@@ -23,11 +23,12 @@ module Levtera::Concerns
       belongs_to :model
       has_many   :vehicles
 
-      # validates :power             , numericality: { only_integer: true, allow_nil: true, greater_than: 0 }
-      # validates :doors_amount      , numericality: { only_integer: true, allow_nil: true, greater_than_or_equal_to: 0 }
-      # validates :valves_amount     , numericality: { only_integer: true, allow_nil: true, greater_than: 0 }
-      # validates :body_type         , inclusion: { in: BODY_TYPES }
-      # validates :transmission_type , inclusion: { in: TRANSMISSION_TYPES }
+      # TODO figure out why this is commented
+      validates :power             , numericality: { only_integer: true, allow_nil: true, greater_than: 0 }
+      validates :doors_amount      , numericality: { only_integer: true, allow_nil: true, greater_than_or_equal_to: 0 }
+      validates :valves_amount     , numericality: { only_integer: true, allow_nil: true, greater_than: 0 }
+      validates :body_type         , inclusion: { in: BODY_TYPES }
+      validates :transmission_type , inclusion: { in: TRANSMISSION_TYPES }
     end
   end
 end
