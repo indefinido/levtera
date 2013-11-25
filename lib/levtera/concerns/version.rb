@@ -24,11 +24,12 @@ module Levtera::Concerns
       has_many   :vehicles
 
       # TODO figure out why this is commented
-      validates :power             , numericality: { only_integer: true, allow_nil: true, greater_than: 0 }
-      validates :doors_amount      , numericality: { only_integer: true, allow_nil: true, greater_than_or_equal_to: 0 }
-      validates :valves_amount     , numericality: { only_integer: true, allow_nil: true, greater_than: 0 }
-      validates :body_type         , inclusion: { in: BODY_TYPES }
-      validates :transmission_type , inclusion: { in: TRANSMISSION_TYPES }
+      # TODO implement array validator
+      # validates :powers             , numericality: { only_integer: true, allow_nil: true, greater_than: 0 }
+      # validates :doors_amounts      , numericality: { only_integer: true, allow_nil: true, greater_than_or_equal_to: 0 }
+      # validates :valves_amounts     , numericality: { only_integer: true, allow_nil: true, greater_than: 0 }
+      # validates :body_types         , inclusion: { in: BODY_TYPES }
+      # validates :transmission_types , inclusion: { in: TRANSMISSION_TYPES }
     end
   end
 end

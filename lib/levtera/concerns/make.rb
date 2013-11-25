@@ -5,12 +5,12 @@ module Levtera::Concerns
     included do
       include Provided
 
-      VEHICLE_TYPES = %i(motorcycle car truck)
+      VEHICLE_TYPES = %w(motorcycle car)
 
       field :name, type: String
-      has_many :models
-
       field :vehicle_type, type: String
+
+      has_many :models
 
       validates :name, presence: true
       validates :vehicle_type, inclusion: { in: VEHICLE_TYPES }

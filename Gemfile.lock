@@ -15,7 +15,6 @@ PATH
       mongoid
       mongoid-rspec
       rails (>= 3)
-      shoulda-matchers
 
 GEM
   remote: http://rubygems.org/
@@ -46,7 +45,7 @@ GEM
       tzinfo (~> 0.3.37)
     addressable (2.3.5)
     arel (4.0.0)
-    atomic (1.1.13)
+    atomic (1.1.14)
     awesome_print (1.1.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -95,7 +94,7 @@ GEM
       rake
       rspec (>= 2.14)
     moped (1.5.1)
-    multi_json (1.8.0)
+    multi_json (1.8.2)
     origin (1.1.0)
     polyglot (0.3.3)
     pry (0.9.12.2)
@@ -150,8 +149,6 @@ GEM
       rspec-expectations (~> 2.14.0)
       rspec-mocks (~> 2.14.0)
     rubygems-tasks (0.2.4)
-    shoulda-matchers (2.1.0)
-      activesupport (>= 3.0.0)
     slop (3.4.6)
     sprockets (2.10.0)
       hike (~> 1.2)
@@ -170,7 +167,7 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.37)
+    tzinfo (0.3.38)
 
 PLATFORMS
   ruby

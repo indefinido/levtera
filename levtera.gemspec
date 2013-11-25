@@ -21,7 +21,6 @@ Gem::Specification.new do |gem|
   gem.add_dependency "mongoid"
 
   # When using levtera/rspec
-  gem.add_dependency 'shoulda-matchers'
   gem.add_dependency 'mongoid-rspec'
 
 

@@ -1,4 +1,4 @@
-Fabricator :levtera_vehicle do
+Fabricator :levtera_vehicle, class_name: 'Vehicle' do
   fabrication_year { Forgery::Basic.year past: true }
   model_year       { Forgery::Basic.year past: false }
 

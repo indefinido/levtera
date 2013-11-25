@@ -1,4 +1,3 @@
-Fabricator :levtera_model do
-  name                { sequence(:model) { |i| "Model #{i}" } }
-  vehicle_type        { VEHICLE_TYPES.sample }
+Fabricator :levtera_model, class_name: 'Model' do
+  name { Forgery::Name.first_name }
 end
