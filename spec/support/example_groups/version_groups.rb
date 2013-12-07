@@ -8,6 +8,7 @@ shared_examples :levtera_version do
     # it { should validate_numericality_of(:valves_amount).to_allow only_integer: true, allow_nil: true, greater_than: 0 }
     # it { should validate_inclusion_of(:transmission_type).on(Levtera::Concerns::Version::TRANSMISSION_TYPES) }
     # it { should validate_inclusion_of(:body_type).on(Levtera::Concerns::Version::BODY_TYPES) }
+    it { should validate_uniqueness_of(:provider_id).scoped_to(:model_id) }
   end
 
 end

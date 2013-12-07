@@ -14,6 +14,7 @@ module Levtera::Concerns
 
       validates :name, presence: true
       validates :vehicle_type, inclusion: { in: VEHICLE_TYPES }
+      validates :provider_id, uniqueness: { allow_nil: true }
     end
   end
 end

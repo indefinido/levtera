@@ -11,6 +11,7 @@ module Levtera::Concerns
       field :name, type: String
 
       validates :name, presence: true
+      validates :provider_id, uniqueness: { allow_nil: true, scope: :make_id }
     end
   end
 end

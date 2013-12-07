@@ -26,6 +26,7 @@ module Levtera::Concerns
       field :provider    , type: Symbol
 
       validates :provider_id, uniqueness: { allow_nil: true, scope: :version_id }
+      validates :provider_id, uniqueness: { allow_nil: true, scope: :version_id }
     end
   end
 end

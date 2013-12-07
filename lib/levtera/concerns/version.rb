@@ -30,6 +30,7 @@ module Levtera::Concerns
       # validates :valves_amounts     , numericality: { only_integer: true, allow_nil: true, greater_than: 0 }
       # validates :body_types         , inclusion: { in: BODY_TYPES }
       # validates :transmission_types , inclusion: { in: TRANSMISSION_TYPES }
+      validates :provider_id, uniqueness: { allow_nil: true, scope: :model_id }
     end
   end
 end
