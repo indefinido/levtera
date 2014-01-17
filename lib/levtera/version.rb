@@ -1,5 +1,3 @@
-require 'active_support'
-
 module Levtera
   # levtera version
   VERSION = "0.2.4"
@@ -13,4 +11,5 @@ module Levtera
     autoload :Version
     autoload :Vehicle
   end
+
 end
