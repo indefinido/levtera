@@ -5,6 +5,6 @@ Fabricator :levtera_version, class_name: 'Version' do
   powers               { [ Forgery::Basic.number,Forgery::Basic.number ] }
   doors_amounts        { [ Forgery::Basic.number,Forgery::Basic.number ] }
   valves_amounts       { [ Forgery::Basic.number,Forgery::Basic.number ] }
-  body_types           { Levtera::Concerns::Version::BODY_TYPES.sample 2 }
+  body_types           { Levtera::Concerns::Version::BODY_TYPES[[:car, :motorcycle].sample].sample 2 }
   transmission_types   { Levtera::Concerns::Version::TRANSMISSION_TYPES.sample 2 }
 end
