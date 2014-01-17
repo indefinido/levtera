@@ -11,7 +11,7 @@ GIT
 PATH
   remote: .
   specs:
-    levtera (0.2.3)
+    levtera (0.2.4)
       mongoid
       mongoid-rspec
       rails (>= 3)
