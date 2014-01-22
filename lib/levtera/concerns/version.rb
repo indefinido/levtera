@@ -6,8 +6,8 @@ module Levtera::Concerns
 
     TRANSMISSION_TYPES = %i(mechanic automatic semi-automatic)
     BODY_TYPES = {
-      car:        %w(Buggy Conversivel Hatch Minivan Perua\/SW Picape Sedan Utilitario Van SUV),
-      motorcycle: %w(Cross Naked Scooter\/Cub Street Trail Custom Quadriciculo Sport Touring Triciculo)
+      car:        %w(Buggy Conversivel Hatch Minivan Perua/SW Picape Sedan Utilitario Van SUV),
+      motorcycle: %w(Cross Naked Scooter/Cub Street Trail Custom Quadriciculo Sport Touring Triciculo)
     }
 
     included do

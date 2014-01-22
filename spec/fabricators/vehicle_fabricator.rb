@@ -7,5 +7,15 @@ Fabricator :levtera_vehicle, class_name: 'Vehicle' do
     plate += sprintf "%04d", Forgery::Basic.number(at_most: 9999)
   end
 
-  engine_feeding  { Levtera::Concerns::Vehicle::ENGINE_FEEDINGS_NAMES.sample }
+  engine_feeding  { |attributes|
+    if attributes.has_key? :version
+      type = attributes[:version].model.make.vehicle_type
+    else
+      type = Make::VEHICLE_TYPES.sample
+    end
+
+    raise "Vehicle could not be detected while fabricating vehicle." unless type
+
+    Levtera::Concerns::Vehicle::ENGINE_FEEDINGS_NAMES[type.to_sym].sample.to_s
+  }
 end

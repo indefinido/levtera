@@ -2,7 +2,7 @@ require 'active_support'
 
 module Levtera
   # levtera version
-  VERSION = "0.2.4"
+  VERSION = "0.2.5"
 
   module Concerns
     extend ActiveSupport::Autoload
