@@ -4,7 +4,7 @@ module Levtera::Concerns
     extend ActiveSupport::Concern
 
     ENGINE_FEEDINGS_NAMES = {
-      car:        %w(Gasolina Diesel Flex GNV Alcool Hibrido TetraFuel),
+      car:        %w(Gasolina Diesel Flex GNV Álcool Híbrido TetraFuel),
       motorcycle: %w(Gasolina Flex)
     }
 
